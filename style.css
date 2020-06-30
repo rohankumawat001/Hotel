@@ -88,12 +88,12 @@ body {
 #mobile-menu{
     padding-top: 4rem;
     display: none;
-    z-index: 500000;
 
 }
-#mobile-menu img{
-    width: 2.5rem;
-    fill: #212121;
+#mobile-menu svg{
+    height: 3rem;
+    width: 4rem;
+    fill: #000000;
 }
 .mobile-nav{
     width: 100%;
@@ -106,6 +106,7 @@ body {
     display: flex;
     justify-content: center;
     transition:.5s ease;
+    
 }
 
 .nav-list__mobile{
@@ -122,6 +123,16 @@ justify-content: center;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.mobile-close{
+ 
+   
+
+}
+#mobile-close svg{
+    padding-top: 4rem;
+    fill: #ffffff;
 }
 
 
@@ -866,13 +877,22 @@ html,body{
         }
         @media only screen and (max-width:450px)
         {
+            main{
+                overflow-x: hidden;
+            }
+            .header{
+                width: 80%;
+                margin-right: 5rem;
+            }
 
         .nav-web{
              display: none;
          }
 
          #mobile-menu{
-           display: block;   
+             position: relative;
+           display: block;  
+           
          }
          .active{
              display: flex;
@@ -907,7 +927,8 @@ html,body{
          }
 
         }
-
+        
+        
 
        
 

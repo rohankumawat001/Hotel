@@ -1,35 +1,16 @@
-import Swup from 'swup';
+
 
 
 $(document).ready(function () {
-  $("#mobile-menu").click(function () { 
-  $(".mobile-nav").toggleClass("active")
- invert = () => {
-  const nav = $(".mobile-nav")  
-  if (nav.hasClass('active')){
-    $(".mobile-menu__img").css({
-      'filter'         : 'invert(1)',
-      '-webkit-filter' : 'invert(1)',
-      '-moz-filter'    : 'invert(1)',
-    
-     });
-   }
-   else {
-    $(".mobile-menu__img").css({
-      'filter'         : 'invert(0)',
-      '-webkit-filter' : 'invert(0)',
-      '-moz-filter'    : 'invert(0)',
-    
-     });
-   }
+$("#mobile-menu").click(function () { 
+$(".mobile-nav").addClass("active")
   
-
-  }
-invert();
-  });
-
-
 });
+
+$("#mobile-close").click(function(){
+  $(".mobile-nav").removeClass("active")
+});
+})
 
 const images = document.querySelectorAll('.anim');
 
